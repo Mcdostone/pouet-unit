@@ -1,5 +1,5 @@
 import './style.css'
-import init, { greet } from 'pouet_jane';
+import init, { greet } from 'pouet_unit';
 
 
 
