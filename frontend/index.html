@@ -1,15 +1,55 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link href="/src/style.css" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>frontend</title>
-
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+    <div id="app">
+
+      <div id="card">
+        <form>
+          <input type="text" value="10 meter to km"/>
+
+          <div id="result-section">
+            <output id="result">0</output>
+
+            <div class="panel">
+                <h2>Operations</h2>
+              <ol id="stepsContainer">
+                <li class="step">
+                  <div class="step-content">Convert <strong>Meter (m)</strong> to base unit: <code>100 × 1</code> = <strong>100</strong></div>
+                </li>
+                <li class="step">
+                  <div class="step-content">Divide by <strong>Kilometer (km)</strong> factor <code>1000</code>: <code>100 ÷ 1000</code> = <strong>0.1</strong></div>
+                </li>
+                <li class="step">
+                  <div class="step-content">Combined factor: <code>0.001</code> → <code>100 × 0.001 = 0.1</code></div>
+              </li>
+            </div>
+            <div class="panel">
+
+          <h2>Excel Formula</h2>
+                <div class="formula-box">
+                  <div class="formula-label">fx</div>
+                  <div class="formula-text" id="excelFormula">=A1*0.001</div>
+                </div>
+
+                <div style="margin-top:14px">
+                  <div class="panel-title" style="margin-bottom:8px">
+
+                </div>
+              </div>
+              </div>
+              </div>
+
+          </form>
+
+        </div>
+
+      </div>
+      <script type="module" src="/src/main.ts"></script>
+    </body>
+  </html>

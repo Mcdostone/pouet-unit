@@ -1,0 +1,15 @@
+{
+  "name": "pouet_unit",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "pouet_unit_bg.wasm",
+    "pouet_unit.js",
+    "pouet_unit.d.ts"
+  ],
+  "main": "pouet_unit.js",
+  "types": "pouet_unit.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
